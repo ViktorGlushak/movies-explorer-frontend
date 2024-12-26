@@ -1,0 +1,202 @@
+.aboutProject {
+    display: flex;
+    flex-direction: column;
+    margin: 110px auto;
+    max-width: calc(100% - 140px);
+}
+
+@media screen and (max-width: 900px) {
+    .aboutProject {
+        margin: 91px auto;
+        max-width: calc(100% - 100px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject {
+        margin: 70px auto;
+        max-width: calc(100% - 36px);
+    }
+}
+
+.aboutProject__description {
+    max-width: 550px;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutProject__description {
+        max-width: 319px;
+    }
+}
+
+.aboutProject__description-info {
+    display: grid;
+    grid-template-columns: 228px 1fr;
+    grid-template-rows: repeat(2,auto);
+    justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutProject__description-info {
+        grid-template-columns: 140px 1fr;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__description-info {
+        grid-template-columns: 100px 1fr;
+        margin: 4px 0 0;
+    }
+}
+
+.aboutProject__description-subtitle {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.04em;
+    line-height: 24px;
+    margin: 70px 0 0;
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__description-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 60px 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__section-subtitle_removed {
+        margin: 0;
+    }
+}
+
+.aboutProject__description-text {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 26px 0 110px;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutProject__description-text {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 22px 0 93px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__description-text {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 16px 0 56px;
+    }
+}
+
+.aboutProject__infoblock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutProject__description:first-child {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__infoblock {
+        display: block;
+    }
+}
+
+.aboutProject__subtitle {
+    border-bottom: 1px solid #000;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.04em;
+    line-height: 27px;
+    margin: 0;
+    padding: 0 0 23px;
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 0 0 28px;
+    }
+}
+
+.aboutProject__text-caption {
+    background-color: #fff;
+    color: #a0a0a0;
+    font-weight: 500;
+    padding: 14px 0 0;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    margin: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__text-caption {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 11px 0;
+    }
+}
+
+.aboutProject__timing {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: #2BE080;
+    color: #000;
+    line-height: 18px;
+    margin: 0;
+    padding: 9px 0;
+    text-align: center;
+    width: 228px;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutProject__timing {
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__timing {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 11px 0;
+        max-width: 100px;
+    }
+}
+
+.aboutProject__timing-colored {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #000;
+    font-weight: 400;
+    padding: 9px 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .aboutProject__timing-colored {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 11px 0;
+    }
+}

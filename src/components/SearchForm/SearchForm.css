@@ -1,0 +1,132 @@
+.search-form {
+    grid-row-gap: 10px;
+    display: grid;
+    grid-template-areas:
+        "input button"
+        "error error"
+        "checkbox checkbox";
+    grid-template-columns: 1fr min-content;
+    row-gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .search-form {
+        row-gap: 5px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .search-form {
+        row-gap: 1px;
+    }
+}
+
+.search-form__button:hover {
+    opacity: 80%;
+}
+
+.search-form__button {
+    font-family: 'Inter', 'Arial', sans-serif;
+    align-self: center;
+    background-color: #3456F3;
+    border: none;
+    border-radius: 48px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    grid-area: button;
+    line-height: 1.64;
+    padding: 8px 10px;
+    transition: opacity .3s,transform .3s,-webkit-transform .3s;
+    width: 60px;
+}
+
+.search-form__checkbox {
+    grid-area: checkbox;
+    justify-self: center;
+    padding-top: 22px;
+}
+
+@media (max-width: 400px) {
+    .search-form__checkbox {
+        padding-top: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .search-form__checkbox {
+        justify-self: end;
+        padding-top: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .search-form__checkbox {
+        justify-self: start;
+        padding-top: 22px;
+    }
+}
+
+.search-form__error {
+    color: var(--error);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    grid-area: error;
+    justify-self: center;
+    line-height: 1.64;
+    min-height: 1.64em;
+}
+
+.register__input-error_active {
+    position: absolute;
+    color: #FF3055;
+    display: block;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    width: 396px;
+}
+
+@media (min-width: 768px) {
+    .search-form__error {
+        font-size: 13px;
+        justify-self: start;
+        line-height: 1.38;
+    }
+}
+
+input {
+    padding: 0;
+}
+
+.search-form__input {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    grid-area: input;
+    grid-column: 1/-1;
+    line-height: 1.22;
+    padding-block: 15px;
+}
+
+.search-form__input:focus-visible {
+    outline: none;
+    border-bottom: solid 1px #3456f3;
+}
+
+@media (min-width: 768px) {
+    .search-form__input {
+        font-size: 28px;
+        line-height: 1.21;
+        padding-block: 13px;
+    }
+}
